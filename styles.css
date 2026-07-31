@@ -695,6 +695,36 @@ h1,h2,h3,.logo__text{font-family:'Oxanium',system-ui,sans-serif;line-height:1.08
 }
 .ficha__item b{font-family:'Oxanium',sans-serif;font-size:17px;font-weight:700;color:var(--tx-1)}
 
+/* ---------------- CORRIDÃO (05h do dia 20) ---------------- */
+.corridao{
+  display:flex;align-items:flex-start;gap:20px;
+  background:linear-gradient(135deg,rgba(232,135,90,.10),rgba(142,63,42,.06) 55%,transparent);
+  border:1px solid rgba(232,135,90,.32);border-left:3px solid var(--dawn);
+  border-radius:10px;padding:26px 28px;margin:-20px 0 44px;
+}
+.corridao__ico{
+  flex:0 0 auto;width:52px;height:52px;display:grid;place-items:center;
+  border:1px solid rgba(232,135,90,.35);border-radius:50%;background:rgba(232,135,90,.08);
+}
+.corridao__ico svg{
+  width:26px;height:26px;fill:none;stroke:var(--dawn);stroke-width:1.7;
+  stroke-linecap:round;stroke-linejoin:round;
+}
+.corridao__badge{
+  display:inline-block;font-size:11px;font-weight:700;letter-spacing:2.2px;
+  text-transform:uppercase;color:var(--dawn);margin-bottom:8px;
+}
+.corridao h3{
+  font-family:'Oxanium',sans-serif;font-size:20px;font-weight:800;letter-spacing:.5px;
+  color:var(--tx-1);margin-bottom:9px;
+}
+.corridao p{color:var(--tx-2);line-height:1.65;max-width:70ch}
+.corridao p strong{color:var(--tx-1)}
+@media (max-width:640px){
+  .corridao{flex-direction:column;gap:14px;padding:22px 20px}
+  .corridao h3{font-size:18px}
+}
+
 /* ---------------- É / NÃO É ---------------- */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:22px}
 .duo__col{
