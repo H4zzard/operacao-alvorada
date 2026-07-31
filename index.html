@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'?l='+l:'';j.async=true;j.src=
+  'https://sgtm.cppem.com.br/metrics/'+dl;f.parentNode.insertBefore(j,f);})
+  (window,document,'script','dataLayer');</script>
+  <!-- End Google Tag Manager -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OPERAÇÃO ALVORADA 11ª EDIÇÃO | CPPEM — Aulão presencial de madrugada</title>
+<meta name="description" content="19 e 20 de setembro, das 23h às 06h, na sede do CPPEM. Uma noite inteira de imersão presencial para quem vai vestir a farda. Vagas limitadas a 250 cadeiras.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#" aria-label="CPPEM">
+      <picture>
+        <source srcset="assets/logo.webp?v=4" type="image/webp">
+        <img src="assets/logo.png?v=4" alt="CPPEM" class="logo__img" width="540" height="180">
+      </picture>
+    </a>
+    <button class="btn btn--ghost btn--sm js-open" type="button">Garantir minha vaga</button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<!-- Só headline sobre a tropa. Nada de figura recortada aqui: o escurecimento
+     vem do .hero__veil, e a foto continua legível por baixo. -->
+<section class="hero">
+  <div class="hero__bg" id="heroBg" role="img" aria-label="Tropa policial em formação"></div>
+  <div class="hero__veil"></div>
+  <div class="hero__dawn"></div>
+  <div class="hero__grid-lines"></div>
+  <div class="hero__scan"></div>
+  <div class="sparks" id="sparks" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <span class="tag anim d1"><i class="dot"></i> 11ª edição · 19 e 20 de setembro · Sede CPPEM</span>
+
+    <h1 class="hero__title anim d2">
+      ENQUANTO A CIDADE DORME,<br>
+      VOCÊ CONQUISTA A <span class="gold">FARDA</span>.
+    </h1>
+
+    <p class="hero__sub anim d3">
+      <strong>OPERAÇÃO ALVORADA</strong> — uma madrugada inteira de imersão presencial,
+      das <strong>23h às 06h</strong>, com foco total em <strong>PMPE e PCPE</strong>.
+      Quem chega ao amanhecer não sai o mesmo.
+    </p>
+
+    <div class="hero__cta anim d4">
+      <button class="btn btn--success btn--lg js-open" type="button"><span>QUERO MINHA VAGA NA ALVORADA</span></button>
+      <span class="hero__note">250 cadeiras · 1º lote acabando</span>
+    </div>
+  </div>
+
+  <div class="hero__fade"></div>
+  <div class="scroller" aria-hidden="true"><i></i></div>
+</section>
+
+<!-- ================= FAIXA ================= -->
+<div class="strip" aria-hidden="true">
+  <div class="strip__track">
+    <span>19 e 20 de setembro</span><span>23h às 06h</span><span>Sede CPPEM</span>
+    <span>250 cadeiras</span><span>PMPE e PCPE</span><span>11ª edição</span>
+    <span>19 e 20 de setembro</span><span>23h às 06h</span><span>Sede CPPEM</span>
+    <span>250 cadeiras</span><span>PMPE e PCPE</span><span>11ª edição</span>
+  </div>
+</div>
+
+<!-- ================= CONTAGEM + LOTE ================= -->
+<section class="section countdown-sec" id="contagem">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">A CONTAGEM JÁ COMEÇOU</span>
+      <h2 class="section__title">O RELÓGIO NÃO ESPERA<br>QUEM AINDA ESTÁ DECIDINDO</h2>
+      <p class="section__lead">
+        <strong>19 de setembro, 23h00.</strong> É quando a Operação Alvorada começa —
+        e a porta fecha com a última cadeira ocupada, não na véspera.
+      </p>
+    </div>
+
+    <!-- data-target: ÚNICO lugar para mudar a data do evento (ISO com fuso -03:00) -->
+    <div class="cdown" id="countdown" data-target="2026-09-19T23:00:00-03:00" role="timer" aria-live="off">
+      <div class="cdown__unit"><b id="cdD">--</b><span>dias</span></div>
+      <div class="cdown__sep" aria-hidden="true">:</div>
+      <div class="cdown__unit"><b id="cdH">--</b><span>horas</span></div>
+      <div class="cdown__sep" aria-hidden="true">:</div>
+      <div class="cdown__unit"><b id="cdM">--</b><span>min</span></div>
+      <div class="cdown__sep" aria-hidden="true">:</div>
+      <div class="cdown__unit"><b id="cdS">--</b><span>seg</span></div>
+    </div>
+
+    <div class="lote">
+      <div class="lote__head">
+        <span class="lote__title">1º LOTE — 150 cadeiras, o mais barato de todos</span>
+        <span class="lote__left" id="loteLeft">carregando…</span>
+      </div>
+      <div class="lote__bar" role="progressbar" aria-label="Cadeiras do 1º lote já ocupadas"
+           aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="loteBar">
+        <i id="loteFill"></i>
+      </div>
+      <p class="lote__note">
+        São 150 cadeiras neste lote, de um total de 250 no evento. Quando ele fechar,
+        o valor sobe — e não volta atrás. Nas edições anteriores as últimas cadeiras
+        foram embora antes da semana do evento.
+      </p>
+    </div>
+
+    <div class="center">
+      <button class="btn btn--success btn--lg js-open" type="button"><span>GARANTIR VAGA NO 1º LOTE</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENTOR ================= -->
+<section class="section section--alt mentor" id="mentor">
+  <div class="container mentor__grid">
+    <div class="mentor__media">
+      <div class="mentor__frame">
+        <div class="mentor__halo" aria-hidden="true"></div>
+        <picture>
+          <source srcset="assets/mentor.webp?v=1" type="image/webp">
+          <img src="assets/mentor.png?v=1" alt="Prof. Everton Mota, mentor do CPPEM"
+               class="mentor__img" width="1100" height="1722" loading="lazy">
+        </picture>
+        <div class="mentor__plate">
+          <strong>PROF. EVERTON MOTA</strong>
+          <span>Mentor · CPPEM Concursos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mentor__copy">
+      <span class="eyebrow"><i class="eyebrow__rule" aria-hidden="true"></i> QUEM TE ACOMPANHA</span>
+      <h2 class="section__title">Quem te orienta<br>aqui <span class="gold">já passou</span>.</h2>
+
+      <p>
+        Aprovado em <strong>15 concursos públicos</strong>, o Prof. Everton Mota não ensina pelo livro.
+        Ensina pela estrada que ele mesmo caminhou. Há mais de 7 anos forma candidatos para carreiras
+        policiais no Nordeste, com mais de 14 mil aprovados.
+      </p>
+      <p>
+        Na <strong>Operação Alvorada</strong>, você não vai assistir mais uma aula gravada e ficar sozinho.
+        Vai estar na mesma sala que ele, ao vivo, durante a madrugada inteira — sendo corrigido,
+        direcionado e cobrado de perto.
+      </p>
+
+      <div class="stats">
+        <div class="stat"><b>15</b><span>Concursos aprovados</span></div>
+        <div class="stat"><b>14K+</b><span>Alunos aprovados</span></div>
+        <div class="stat"><b>7+</b><span>Anos de atuação</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE É ================= -->
+<section class="section" id="oquee">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">O QUE É</span>
+      <h2 class="section__title">OPERAÇÃO ALVORADA</h2>
+      <p class="section__lead">
+        Não é aula. É <strong>operação</strong>. Uma noite inteira dentro da sede do CPPEM, das
+        <strong>23h às 06h</strong>, no mesmo estado de cansaço, pressão e foco que a sua prova vai exigir.
+        Você entra à noite candidato e sai no amanhecer com a cabeça de quem já sabe o que é aguentar.
+      </p>
+    </div>
+
+    <div class="ficha">
+      <div class="ficha__item"><span>Data</span><b>19 e 20 de setembro</b></div>
+      <div class="ficha__item"><span>Horário</span><b>23h00 às 06h00</b></div>
+      <div class="ficha__item"><span>Local</span><b>Sede CPPEM</b></div>
+      <div class="ficha__item"><span>Capacidade</span><b>250 cadeiras</b></div>
+      <div class="ficha__item"><span>Foco</span><b>PMPE e PCPE</b></div>
+      <div class="ficha__item"><span>Edição</span><b>A 11ª</b></div>
+    </div>
+
+    <div class="cards cards--3">
+      <article class="card">
+        <span class="card__num">01</span>
+        <h3>Imersão de verdade</h3>
+        <p>Sete horas seguidas, presencial, sem celular te puxando e sem a desculpa de "amanhã eu vejo a gravação".</p>
+      </article>
+      <article class="card">
+        <span class="card__num">02</span>
+        <h3>Pressão controlada</h3>
+        <p>Estudar cansado, de madrugada, cercado de gente disputando a mesma vaga. É o ensaio mais próximo do dia da prova.</p>
+      </article>
+      <article class="card">
+        <span class="card__num">03</span>
+        <h3>Roteiro lacrado</h3>
+        <p>O que acontece a cada bloco da madrugada só se descobre lá dentro. Quem já veio nas outras edições sabe o motivo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POR QUE A MADRUGADA ================= -->
+<section class="section section--alt" id="madrugada">
+  <div class="container split">
+    <div class="split__media">
+      <div class="split__frame">
+        <div class="split__img" role="img" aria-label="Alunos do CPPEM em formação"></div>
+      </div>
+    </div>
+    <div class="split__copy">
+      <span class="eyebrow">POR QUE DE MADRUGADA</span>
+      <h2 class="section__title">APROVAÇÃO NÃO SE DECIDE<br>NO DIA FÁCIL</h2>
+      <p class="split__lead">
+        Todo mundo estuda bem descansado, de manhã, com café na mesa. O problema é que a farda
+        não é entregue para quem rende no dia fácil — é entregue para quem aguenta o difícil.
+      </p>
+      <ul class="check">
+        <li>Você descobre até onde a sua cabeça vai quando o corpo já pediu para parar.</li>
+        <li>Aprende a manter leitura, atenção e ritmo com sono — exatamente o que a prova cobra.</li>
+        <li>Sai da madrugada com uma referência real do seu nível, não com um "acho que estou bem".</li>
+        <li>Encontra a tropa: 250 pessoas provando para si mesmas que dá para ir além.</li>
+      </ul>
+      <button class="btn btn--gold js-open" type="button"><span>EU AGUENTO A MADRUGADA</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= O QUE VOCÊ LEVA ================= -->
+<section class="section" id="dentro">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">O QUE VOCÊ LEVA</span>
+      <h2 class="section__title">O QUE ESTÁ INCLUSO NA OPERAÇÃO</h2>
+      <p class="section__lead">
+        O conteúdo da madrugada é surpresa. O que você recebe ao entrar, não.
+      </p>
+    </div>
+
+    <div class="cards cards--3 cards--feature">
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Sua cadeira na sede</h3>
+        <p>Lugar garantido na nossa sede, com estrutura montada para aguentar a noite inteira ao seu lado.</p>
+      </article>
+
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><path d="M20 7H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1zM5 7v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7M10 11h4"/></svg>
+        </div>
+        <h3>Kit do operador</h3>
+        <p>Você recebe o seu kit no credenciamento. O que vem dentro dele só quem chega descobre.</p>
+      </article>
+
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Professores ao vivo</h3>
+        <p>Time do CPPEM na sua frente a noite toda, com o Prof. Everton Mota conduzindo a operação.</p>
+      </article>
+
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+        </div>
+        <h3>Lanche na virada</h3>
+        <p>Ninguém atravessa sete horas no seco. Tem pausa e reforço no meio da madrugada, por nossa conta.</p>
+      </article>
+
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg>
+        </div>
+        <h3>Mira em PMPE e PCPE</h3>
+        <p>Nada de conteúdo genérico de concurso. A operação inteira é calibrada para as bancas que você vai enfrentar.</p>
+      </article>
+
+      <article class="card card--feat">
+        <div class="ico">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 9.4 8 10 4.6-.6 8-5 8-10V6l-8-4z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3>Certificado e registro</h3>
+        <p>Foto oficial da tropa no amanhecer e o registro de que você esteve na 11ª edição. Nem todo mundo pode dizer isso.</p>
+      </article>
+    </div>
+
+    <div class="center">
+      <button class="btn btn--success btn--lg js-open" type="button"><span>QUERO ESTAR NESSA NOITE</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PARA QUEM É ================= -->
+<section class="section section--alt" id="paraquem">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">PARA QUEM É</span>
+      <h2 class="section__title">A ALVORADA NÃO É PARA TODO MUNDO</h2>
+    </div>
+
+    <div class="duo">
+      <div class="duo__col duo__col--yes">
+        <h3>É para você se…</h3>
+        <ul class="check">
+          <li>Você vai encarar <strong>PMPE ou PCPE</strong> e quer chegar diferente na prova.</li>
+          <li>Você já cansou de estudar sozinho e precisa sentir a pressão da tropa.</li>
+          <li>Você quer saber, na prática, como a sua cabeça responde sob cansaço.</li>
+          <li>Você aguenta abrir mão de uma noite de sono pela vaga que quer há anos.</li>
+        </ul>
+      </div>
+      <div class="duo__col duo__col--no">
+        <h3>Não é para você se…</h3>
+        <ul class="cross">
+          <li>Você quer só mais um conteúdo para "assistir depois com calma".</li>
+          <li>Você espera cronograma detalhado antes de decidir se vale a pena.</li>
+          <li>Você desiste no primeiro bocejo às 02h da manhã.</li>
+          <li>Você acha que aprovação vem sem incômodo nenhum.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="section" id="comofunciona">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">COMO GARANTIR</span>
+      <h2 class="section__title">DO CADASTRO À SUA CADEIRA</h2>
+    </div>
+    <ol class="steps">
+      <li><span>1</span><div><h3>Preencha o formulário</h3><p>Nome, e-mail e WhatsApp. Leva menos de 1 minuto.</p></div></li>
+      <li><span>2</span><div><h3>Conclua no checkout</h3><p>Você é levado direto para o pagamento seguro do 1º lote, sem intermediário.</p></div></li>
+      <li><span>3</span><div><h3>Receba a confirmação</h3><p>Sua cadeira fica reservada e você entra no grupo oficial da operação.</p></div></li>
+      <li><span>4</span><div><h3>Apareça às 23h</h3><p>Dia 19 de setembro, na sede do CPPEM. O resto você descobre lá dentro.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section section--alt" id="faq">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">DÚVIDAS</span>
+      <h2 class="section__title">PERGUNTAS E RESPOSTAS</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq__item">
+        <summary>Quando e onde acontece?</summary>
+        <p>Na noite de <strong>19 para 20 de setembro</strong>, das <strong>23h00 às 06h00</strong>, na sede do CPPEM. O credenciamento abre antes do início — o endereço completo e o horário de chegada vão no e-mail de confirmação.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Por que vocês não divulgam a programação?</summary>
+        <p>Porque metade do efeito da Alvorada é não saber o que vem a seguir. Quem já participou das edições anteriores entende: o roteiro fechado é parte do treino, não falta de informação.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Serve para quem está começando agora?</summary>
+        <p>Serve. A operação não é uma prova de nível: é uma imersão. Iniciante sai com direção e veterano sai com diagnóstico. Os dois saem sabendo onde estão de verdade.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Vai ter gravação para assistir depois?</summary>
+        <p>Não. A Operação Alvorada é presencial e acontece uma única vez. Quem não estiver na cadeira naquela madrugada não participa desta edição.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Por que só 250 vagas?</summary>
+        <p>É o que a sede comporta mantendo todo mundo perto do professor. Passou disso, vira plateia — e plateia não é o que a gente quer formar.</p>
+      </details>
+      <details class="faq__item">
+        <summary>O que acontece quando o 1º lote fecha?</summary>
+        <p>O valor sobe para o lote seguinte e não retorna. Cada lote é liberado só quando o anterior esgota, então o preço que você vê hoje é o menor que vai existir.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="final">
+  <div class="container final__inner">
+    <h2>DAQUI A UM ANO VOCÊ VAI LEMBRAR<br>DA NOITE EM QUE <span class="gold">DECIDIU</span>.</h2>
+    <p>19 e 20 de setembro · 23h às 06h · Sede CPPEM · 250 cadeiras.</p>
+    <button class="btn btn--success btn--lg js-open" type="button"><span>GARANTIR MINHA VAGA AGORA</span></button>
+    <span class="final__note">1º lote enquanto durar — depois o valor sobe.</span>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logos">
+          <picture>
+            <source srcset="assets/logo.webp?v=4" type="image/webp">
+            <img src="assets/logo.png?v=4" alt="CPPEM Concursos Públicos" width="540" height="180" />
+          </picture>
+        </div>
+        <p>Operação Alvorada — a madrugada que separa quem quer a farda de quem vai buscá-la.</p>
+        <div class="footer__social">
+          <a href="https://wa.me/558173105354" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.2-.8 1-.9 1.1-.3.2-.6.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.6-2c-.2-.3 0-.5.1-.6l.5-.5.3-.5v-.5L9 6.9c-.2-.5-.4-.4-.5-.4h-.6a1.1 1.1 0 0 0-.8.4A3.4 3.4 0 0 0 6 9.3c0 1.5 1.1 3 1.3 3.2a12 12 0 0 0 4.6 4c.6.3 1.1.5 1.5.6.7.2 1.3.2 1.7.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.1-1.4zM12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.3A10 10 0 1 0 12 2z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/cppemconcursos/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9s.7.8.9 1.4c.1.4.3 1 .4 2.2 0 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4s-.8.7-1.4.9c-.4.1-1 .3-2.2.4-1.3 0-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.1-.4-.3-1-.4-2.2 0-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4s.8-.7 1.4-.9c.4-.1 1-.3 2.2-.4 1.3 0 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2 1.4-.7.6-1.1 1.2-1.4 2C.3 4.7.1 5.6.1 6.9 0 8.2 0 8.6 0 12s0 3.8.1 5.1c0 1.3.2 2.2.5 2.9.3.8.7 1.4 1.4 2 .6.7 1.2 1.1 2 1.4.7.3 1.6.5 2.9.5 1.3.1 1.7.1 5.1.1s3.8 0 5.1-.1c1.3 0 2.2-.2 2.9-.5.8-.3 1.4-.7 2-1.4.7-.6 1.1-1.2 1.4-2 .3-.7.5-1.6.5-2.9.1-1.3.1-1.7.1-5.1s0-3.8-.1-5.1c0-1.3-.2-2.2-.5-2.9-.3-.8-.7-1.4-1.4-2-.6-.7-1.2-1.1-2-1.4-.7-.3-1.6-.5-2.9-.5C15.8 0 15.4 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3.3v13.2a2.4 2.4 0 1 1-2.4-2.4c.2 0 .5 0 .7.1v-3.3a5.7 5.7 0 1 0 5 5.7V9.7a7.6 7.6 0 0 0 4.4 1.4V7.8a4.3 4.3 0 0 1-3.4-2z"/></svg>
+          </a>
+          <a href="https://www.threads.net/@cppemconcursos" target="_blank" rel="noopener" aria-label="Threads">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.2 2c-4.9 0-8 3.2-8.2 8.3v3.4c.2 5.1 3.3 8.3 8.2 8.3h.1c2.6 0 4.5-.7 6-2.2 1.9-2 1.9-4.5 1.3-6-.5-1.3-1.5-2.3-2.9-2.9-.1-2.3-1.5-3.7-3.9-3.7-1.5 0-2.9.7-3.6 1.9l1.6 1.1c.4-.7 1.1-1 2-1 1 0 1.7.5 1.9 1.5a9 9 0 0 0-1.8-.1c-2.4.1-4 1.5-3.9 3.5 0 1 .5 1.9 1.4 2.4.7.5 1.6.7 2.6.6 1.3-.1 2.3-.6 3-1.5.5-.7.8-1.5.9-2.6.5.3.9.8 1.1 1.3.3.9.4 2.4-.9 3.7-1.1 1.1-2.5 1.6-4.6 1.6h-.1c-3.8 0-6-2.4-6.2-6.5v-3.2C6.2 6.5 8.4 4 12.1 4h.1c3.8 0 6 2.4 6.2 6.5v.1l2-.1v-.1C20.1 5.2 17 2 12.2 2zm.3 12.2c-.1.9-.6 1.7-1.7 1.8-.7 0-1.4-.3-1.5-1-.1-.6.4-1.2 1.7-1.3h.5c.3 0 .7 0 1 .1v.4z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/people/Cppem-Cursos-preparat%C3%B3rios/61550943416378/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.6 4.5-4.6 1.3 0 2.6.2 2.6.2v2.9h-1.5c-1.5 0-1.9.9-1.9 1.8V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Cursos">
+        <h4>Cursos</h4>
+        <a href="https://cppem.com.br/turmas" target="_blank" rel="noopener">Turmas</a>
+        <a href="https://unicive.cppem.com.br" target="_blank" rel="noopener">Faculdade EAD</a>
+        <a href="https://cppem.com.br/combate" target="_blank" rel="noopener">Plano de Combate</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Conteúdo">
+        <h4>Conteúdo</h4>
+        <a href="https://cppem.com.br/noticias" target="_blank" rel="noopener">Notícias</a>
+        <a href="https://loja.cppem.com.br" target="_blank" rel="noopener">Loja</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Institucional">
+        <h4>Institucional</h4>
+        <a href="https://cppem.com.br/quem-somos" target="_blank" rel="noopener">Quem Somos</a>
+        <a href="https://cppem.com.br/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>
+        <a href="https://cppem.notion.site/vagas" target="_blank" rel="noopener">Trabalhe Conosco</a>
+      </nav>
+    </div>
+
+    <div class="footer__bar">
+      <span>&copy; <span id="year"></span> <strong>CPPEM Concursos Públicos LTDA.</strong> — Onde o concurseiro vira policial.</span>
+      <span class="footer__cnpj">CNPJ 57.347.872/0001-48</span>
+    </div>
+  </footer>
+
+<!-- ================= MODAL ================= -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" type="button" data-close aria-label="Fechar">&times;</button>
+
+    <span class="eyebrow">FALTA POUCO!</span>
+    <h3 id="modalTitle" class="modal__title">PREENCHA SEUS DADOS<br>E VÁ PARA O CHECKOUT</h3>
+    <p class="modal__lead">
+      Falta só um passo para garantir sua cadeira na <strong>Operação Alvorada</strong>.
+      Preencha os dados abaixo e você é levado direto para o pagamento do 1º lote.
+    </p>
+
+    <!-- NOMENCLATURA CANÔNICA (TRACKING.md §6.0) — não traduzir os nomes.
+         O id do <form> é o identificador deste site no painel da PixelX: é um
+         `id`, no <form>, como nas outras landings. É ele que vincula a regra de
+         conversão — e é a regra que ROTEIA o Lead para o destino certo.
+         Não trocar sem antes ajustar o painel. -->
+    <form class="form" name="lead_form" id="IPEyzyfmJhKQEYIXAlZH" novalidate>
+      <div class="field">
+        <label for="lead_name">Nome completo</label>
+        <input type="text" id="lead_name" name="name" placeholder="Seu nome completo" required autocomplete="name">
+        <span class="err" data-error-for="name"></span>
+      </div>
+      <div class="field">
+        <label for="lead_email">E-mail</label>
+        <input type="email" id="lead_email" name="email" placeholder="seuemail@gmail.com" required autocomplete="email">
+        <span class="err" data-error-for="email"></span>
+      </div>
+      <div class="field">
+        <label for="lead_phone">WhatsApp (com DDD)</label>
+        <input class="pxa_mask_phone" type="text" id="lead_phone" name="phone" placeholder="(81) 9 9999-9999" required autocomplete="tel">
+        <span class="err" data-error-for="phone"></span>
+      </div>
+
+      <button class="btn btn--success btn--lg btn--block" type="submit" id="lead_submit">
+        <span class="btn__label">IR PARA O CHECKOUT</span>
+        <span class="spinner" hidden></span>
+      </button>
+      <p class="modal__foot">Seus dados estão seguros e são usados apenas para a sua inscrição.</p>
+    </form>
+  </div>
+</div>
+
+<script src="script.js?v=4"></script>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://sgtm.cppem.com.br/ns.html?id=GTM-PJ379FLQ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+</body>
+</html>
