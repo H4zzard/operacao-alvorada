@@ -81,6 +81,37 @@
   </div>
 </div>
 
+<!-- ================= FICHA DO EVENTO (topo) ================= -->
+<section class="section section--tight" id="info">
+  <div class="container">
+    <div class="ficha">
+      <div class="ficha__item"><span>Data</span><b>19 e 20 de setembro</b></div>
+      <div class="ficha__item"><span>Horário</span><b>23h00 às 06h00</b></div>
+      <div class="ficha__item"><span>Local</span><b>Sede CPPEM</b></div>
+      <div class="ficha__item"><span>Capacidade</span><b>250 cadeiras</b></div>
+      <div class="ficha__item"><span>Foco</span><b>PMPE e PCPE</b></div>
+      <div class="ficha__item"><span>Edição</span><b>A 11ª</b></div>
+    </div>
+
+    <!-- ===== CORRIDÃO — 05h do dia 20 ===== -->
+    <div class="corridao">
+      <div class="corridao__ico" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="14" cy="4" r="2"/><path d="m8 21 2.5-5.5L8 12l1-5 4 2 3 2M9 9 5.5 10.5 4 15M13 15l2 6"/></svg>
+      </div>
+      <div class="corridao__copy">
+        <span class="corridao__badge">DIA 20 · 05H00</span>
+        <h3>O CORRIDÃO FECHA A OPERAÇÃO</h3>
+        <p>
+          Depois de uma madrugada inteira de estudo, às <strong>05h00 do dia 20</strong> a tropa
+          sai da cadeira e vai para o <strong>corridão com os alunos</strong> — o treino físico
+          que encerra a Alvorada no clarão do amanhecer. Venha preparado: leve roupa e tênis
+          para correr.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CONTAGEM + LOTE ================= -->
 <section class="section countdown-sec" id="contagem">
   <div class="container">
@@ -126,129 +157,73 @@
   </div>
 </section>
 
-<!-- ================= MENTOR ================= -->
-<section class="section section--alt mentor" id="mentor">
-  <div class="container mentor__grid">
-    <div class="mentor__media">
-      <div class="mentor__frame">
-        <div class="mentor__halo" aria-hidden="true"></div>
-        <picture>
-          <source srcset="assets/mentor.webp?v=1" type="image/webp">
-          <img src="assets/mentor.png?v=1" alt="Prof. Everton Mota, mentor do CPPEM"
-               class="mentor__img" width="1100" height="1722" loading="lazy">
-        </picture>
-        <div class="mentor__plate">
+<!-- ================= CONVIDADOS =================
+     Grade de convidados: o Prof. Everton abre a linha e os demais entram nos
+     cards seguintes. Para anunciar um convidado, troque o card .lineup__card--soon
+     por um card completo (foto + plate + bio), no mesmo formato do primeiro. -->
+<section class="section section--alt" id="convidados">
+  <div class="container">
+    <div class="section__head">
+      <span class="eyebrow">QUEM TE ACOMPANHA</span>
+      <h2 class="section__title">QUEM TE ORIENTA AQUI<br><span class="gold">JÁ PASSOU</span> POR ISSO</h2>
+      <p class="section__lead">
+        A madrugada inteira ao vivo, na mesma sala que você. Os demais convidados
+        da 11ª edição são anunciados até a semana do evento.
+      </p>
+    </div>
+
+    <div class="lineup">
+      <article class="lineup__card">
+        <div class="lineup__frame">
+          <div class="lineup__halo" aria-hidden="true"></div>
+          <picture>
+            <source srcset="assets/mentor.webp?v=1" type="image/webp">
+            <img src="assets/mentor.png?v=1" alt="Prof. Everton Mota, mentor do CPPEM"
+                 class="lineup__img" width="1100" height="1722" loading="lazy">
+          </picture>
+        </div>
+        <div class="lineup__plate">
           <strong>PROF. EVERTON MOTA</strong>
           <span>Mentor · CPPEM Concursos</span>
         </div>
-      </div>
-    </div>
-
-    <div class="mentor__copy">
-      <span class="eyebrow"><i class="eyebrow__rule" aria-hidden="true"></i> QUEM TE ACOMPANHA</span>
-      <h2 class="section__title">Quem te orienta<br>aqui <span class="gold">já passou</span>.</h2>
-
-      <p>
-        Aprovado em <strong>15 concursos públicos</strong>, o Prof. Everton Mota não ensina pelo livro.
-        Ensina pela estrada que ele mesmo caminhou. Há mais de 7 anos forma candidatos para carreiras
-        policiais no Nordeste, com mais de 14 mil aprovados.
-      </p>
-      <p>
-        Na <strong>Operação Alvorada</strong>, você não vai assistir mais uma aula gravada e ficar sozinho.
-        Vai estar na mesma sala que ele, ao vivo, durante a madrugada inteira — sendo corrigido,
-        direcionado e cobrado de perto.
-      </p>
-
-      <div class="stats">
-        <div class="stat"><b>15</b><span>Concursos aprovados</span></div>
-        <div class="stat"><b>14K+</b><span>Alunos aprovados</span></div>
-        <div class="stat"><b>7+</b><span>Anos de atuação</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= O QUE É ================= -->
-<section class="section" id="oquee">
-  <div class="container">
-    <div class="section__head">
-      <span class="eyebrow">O QUE É</span>
-      <h2 class="section__title">OPERAÇÃO ALVORADA</h2>
-      <p class="section__lead">
-        Não é aula. É <strong>operação</strong>. Uma noite inteira dentro da sede do CPPEM, das
-        <strong>23h às 06h</strong>, no mesmo estado de cansaço, pressão e foco que a sua prova vai exigir.
-        Você entra à noite candidato e sai no amanhecer com a cabeça de quem já sabe o que é aguentar.
-      </p>
-    </div>
-
-    <div class="ficha">
-      <div class="ficha__item"><span>Data</span><b>19 e 20 de setembro</b></div>
-      <div class="ficha__item"><span>Horário</span><b>23h00 às 06h00</b></div>
-      <div class="ficha__item"><span>Local</span><b>Sede CPPEM</b></div>
-      <div class="ficha__item"><span>Capacidade</span><b>250 cadeiras</b></div>
-      <div class="ficha__item"><span>Foco</span><b>PMPE e PCPE</b></div>
-      <div class="ficha__item"><span>Edição</span><b>A 11ª</b></div>
-    </div>
-
-    <!-- ===== CORRIDÃO — 05h do dia 20 ===== -->
-    <div class="corridao">
-      <div class="corridao__ico" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><circle cx="14" cy="4" r="2"/><path d="m8 21 2.5-5.5L8 12l1-5 4 2 3 2M9 9 5.5 10.5 4 15M13 15l2 6"/></svg>
-      </div>
-      <div class="corridao__copy">
-        <span class="corridao__badge">DIA 20 · 05H00</span>
-        <h3>O CORRIDÃO FECHA A OPERAÇÃO</h3>
-        <p>
-          Depois de uma madrugada inteira de estudo, às <strong>05h00 do dia 20</strong> a tropa
-          sai da cadeira e vai para o <strong>corridão com os alunos</strong> — o treino físico
-          que encerra a Alvorada no clarão do amanhecer. Venha preparado: leve roupa e tênis
-          para correr.
+        <p class="lineup__bio">
+          Aprovado em <strong>15 concursos públicos</strong>, não ensina pelo livro: ensina pela
+          estrada que ele mesmo caminhou. Há mais de 7 anos forma candidatos para carreiras
+          policiais no Nordeste, com mais de 14 mil aprovados.
         </p>
-      </div>
+      </article>
+
+      <article class="lineup__card lineup__card--soon">
+        <div class="lineup__frame">
+          <div class="lineup__silhueta" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+          </div>
+        </div>
+        <div class="lineup__plate">
+          <strong>CONVIDADO 02</strong>
+          <span>A ser anunciado</span>
+        </div>
+        <p class="lineup__bio">Mais um nome entra na operação. O anúncio sai no grupo oficial antes de ir para a página.</p>
+      </article>
+
+      <article class="lineup__card lineup__card--soon">
+        <div class="lineup__frame">
+          <div class="lineup__silhueta" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a8 8 0 0 1 16 0v1"/></svg>
+          </div>
+        </div>
+        <div class="lineup__plate">
+          <strong>CONVIDADO 03</strong>
+          <span>A ser anunciado</span>
+        </div>
+        <p class="lineup__bio">Quem garante a cadeira agora fica sabendo em primeira mão quem sobe ao palco na madrugada.</p>
+      </article>
     </div>
 
-    <div class="cards cards--3">
-      <article class="card">
-        <span class="card__num">01</span>
-        <h3>Imersão de verdade</h3>
-        <p>Sete horas seguidas, presencial, sem celular te puxando e sem a desculpa de "amanhã eu vejo a gravação".</p>
-      </article>
-      <article class="card">
-        <span class="card__num">02</span>
-        <h3>Pressão controlada</h3>
-        <p>Estudar cansado, de madrugada, cercado de gente disputando a mesma vaga. É o ensaio mais próximo do dia da prova.</p>
-      </article>
-      <article class="card">
-        <span class="card__num">03</span>
-        <h3>Roteiro lacrado</h3>
-        <p>O que acontece a cada bloco da madrugada só se descobre lá dentro. Quem já veio nas outras edições sabe o motivo.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ================= POR QUE A MADRUGADA ================= -->
-<section class="section section--alt" id="madrugada">
-  <div class="container split">
-    <div class="split__media">
-      <div class="split__frame">
-        <div class="split__img" role="img" aria-label="Alunos do CPPEM em formação"></div>
-      </div>
-    </div>
-    <div class="split__copy">
-      <span class="eyebrow">POR QUE DE MADRUGADA</span>
-      <h2 class="section__title">APROVAÇÃO NÃO SE DECIDE<br>NO DIA FÁCIL</h2>
-      <p class="split__lead">
-        Todo mundo estuda bem descansado, de manhã, com café na mesa. O problema é que a farda
-        não é entregue para quem rende no dia fácil — é entregue para quem aguenta o difícil.
-      </p>
-      <ul class="check">
-        <li>Você descobre até onde a sua cabeça vai quando o corpo já pediu para parar.</li>
-        <li>Aprende a manter leitura, atenção e ritmo com sono — exatamente o que a prova cobra.</li>
-        <li>Sai da madrugada com uma referência real do seu nível, não com um "acho que estou bem".</li>
-        <li>Encontra a tropa: 250 pessoas provando para si mesmas que dá para ir além.</li>
-      </ul>
-      <button class="btn btn--gold js-open" type="button"><span>EU AGUENTO A MADRUGADA</span></button>
+    <div class="stats stats--center">
+      <div class="stat"><b>15</b><span>Concursos aprovados</span></div>
+      <div class="stat"><b>14K+</b><span>Alunos aprovados</span></div>
+      <div class="stat"><b>7+</b><span>Anos de atuação</span></div>
     </div>
   </div>
 </section>

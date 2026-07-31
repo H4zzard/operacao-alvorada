@@ -136,7 +136,7 @@
   }
 
   /* ---------- reveal on scroll (com escalonamento) ---------- */
-  var targets = document.querySelectorAll('.section__head, .card, .steps li, .split__copy, .split__media, .final__inner, .cdown, .lote, .ficha__item, .duo__col, .faq__item, .mentor__copy');
+  var targets = document.querySelectorAll('.section__head, .card, .steps li, .final__inner, .cdown, .lote, .ficha__item, .corridao, .duo__col, .faq__item, .lineup__card');
   Array.prototype.forEach.call(targets, function (el) { el.classList.add('reveal'); });
 
   if ('IntersectionObserver' in window) {
